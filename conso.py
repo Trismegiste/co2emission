@@ -10,7 +10,6 @@ headers= {
     "User-Agent" : "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
     "Accept" : "*/*",
     "Accept-Language" : "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3",
-    "electricitymap-token" : "kUp26@Zg4fv$9Pm",
     "x-request-timestamp" : "1688713817661",
     "x-signature" : "e2e3b0d4becf6df4011f9ea0c0d4e027d93c531ea04a1a482d21609785f21081",
     "Sec-Fetch-Dest" : "empty",
