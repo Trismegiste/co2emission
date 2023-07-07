@@ -2,6 +2,8 @@
 
 import requests
 import subprocess
+import re
+import sys
 
 response = requests.get("https://app-backend.electricitymap.org/v6/details/hourly/FR",
 headers= {
@@ -29,4 +31,7 @@ print(str(lastMeasure[1]['co2intensityProduction']) + ' gCO₂eq/kWh')
 
 # Gets nvidia graphic card consumption
 output = subprocess.run(['nvidia-detector'], stdout=subprocess.PIPE, text=True, check=True)
-print(output.stdout)
+
+if (None != re.search('^None', output.stdout)):
+    print('No nvidia cards')
+    sys.exit()
